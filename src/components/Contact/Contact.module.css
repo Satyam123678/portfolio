@@ -1,0 +1,318 @@
+@import "../../vars.css";
+
+/* ========== Root Shine Animation Setup ========== */
+:root {
+  --btn-border: 1px solid rgba(255, 255, 255, 0.2);
+  --btn-bg: transparent;
+  --btn-shadow: 1px 1px 25px 10px rgba(255, 255, 255, 0.3);
+  --btn-text-color: #f4f4f4;
+  --shine-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== Container & Layout ========== */
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background: linear-gradient(180deg, rgba(25, 55, 109, 0.96) 0%, rgba(8, 22, 49, 0.96) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+  flex-wrap: wrap;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* ========== Button with Shine Effect ========== */
+.btn {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  text-decoration: none;
+  border: var(--btn-border);
+  color: var(--btn-text-color);
+  background: var(--btn-bg);
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, var(--shine-color), transparent);
+  transition: all 0.6s ease-in-out;
+  z-index: -1;
+}
+
+.btn:hover {
+  box-shadow: var(--btn-shadow);
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+/* Continuous Shine Animation */
+.btnanim::before {
+  animation: shine 2s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* ========== Text Area ========== */
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 20px;
+}
+
+.text h2 {
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 34px;
+}
+
+.text p {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* ========== Link Section ========== */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.link img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.2));
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.link a:hover {
+  color: #89c4ff;
+}
+
+/* ========== Responsive Design ========== */
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5%;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .links {
+    width: 100%;
+    align-items: center;
+  }
+
+  .link a {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .link {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ========== Login Form ========== */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 46px 38px;
+  color: white;
+  background: rgba(7, 14, 30, 0.85);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+}
+
+.loginFormContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loginFormContent h1 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.formInputMaterial {
+  margin: 12px 0;
+  position: relative;
+}
+
+.formControlMaterial {
+  width: 100%;
+  padding: 12px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.formControlMaterial::placeholder {
+  color: transparent;
+}
+
+.formInputMaterial label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: white;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.formControlMaterial:focus {
+  border-bottom-color: #89c4ff;
+  box-shadow: 0 8px 18px rgba(137, 196, 255, 0.08);
+}
+
+.formControlMaterial:focus + label,
+.formControlMaterial:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 0;
+  font-size: 12px;
+  color: #89c4ff;
+}
+
+.btn {
+  align-self: center;
+  margin-top: 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(135deg, #5a8cff, #2d5fd1);
+  box-shadow: 0 12px 28px rgba(45, 95, 209, 0.24);
+}
+
+.btn:hover {
+  box-shadow: 0 16px 34px rgba(45, 95, 209, 0.32);
+}
+
+.btn:focus-visible {
+  outline: 2px solid rgba(137, 196, 255, 0.9);
+  outline-offset: 4px;
+}
+
+:root[data-theme="light"] .container {
+  background: linear-gradient(180deg, rgba(246, 249, 255, 0.96) 0%, rgba(219, 230, 255, 0.96) 100%);
+  color: #10233f;
+}
+
+:root[data-theme="light"] .loginForm {
+  background: rgba(255, 255, 255, 0.88);
+  color: #10233f;
+  border-color: rgba(16, 35, 63, 0.08);
+  box-shadow: 0 18px 44px rgba(16, 35, 63, 0.12);
+}
+
+:root[data-theme="light"] .loginFormContent h1,
+:root[data-theme="light"] .text h2,
+:root[data-theme="light"] .text p,
+:root[data-theme="light"] .link a,
+:root[data-theme="light"] .formInputMaterial label,
+:root[data-theme="light"] .formControlMaterial {
+  color: #10233f;
+}
+
+:root[data-theme="light"] .formControlMaterial {
+  border-bottom-color: rgba(16, 35, 63, 0.35);
+}
+
+:root[data-theme="light"] .formControlMaterial:focus {
+  border-bottom-color: #3458d4;
+  box-shadow: 0 8px 18px rgba(52, 88, 212, 0.08);
+}
+
+:root[data-theme="light"] .formControlMaterial:focus + label,
+:root[data-theme="light"] .formControlMaterial:not(:placeholder-shown) + label {
+  color: #3458d4;
+}
+
+:root[data-theme="light"] .link img {
+  filter: drop-shadow(0 4px 10px rgba(16, 35, 63, 0.12));
+}
+
+:root[data-theme="light"] .link a:hover {
+  color: #3458d4;
+}
+
+:root[data-theme="light"] .btn {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}

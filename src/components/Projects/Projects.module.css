@@ -1,0 +1,40 @@
+@import "../../vars.css";
+
+.container {
+  margin-top: 84px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}

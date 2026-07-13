@@ -1,0 +1,18 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "organisation": "Tata Consultancy Services",
+    "startDate": "Dec, 2024",
+    "endDate": "Present",
+    "experiences": ["Worked on live hosted projects", "Reduced load times by 50%", "Developed and Maintained West Bengal Government website for the company"],
+    "imageSrc": "history/tata.png"
+  },
+  {
+    "role": "Software Developer",
+    "organisation": "Mankar College",
+    "startDate": "Aug, 2021",
+    "endDate": "Aug, 2022",
+    "experiences": [ "Designed a Learning Management System , Mankar College" , "Developed a website for the college" , "Worked in a team of 5 members"],
+    "imageSrc": "history/mankarCollge.jpg"
+  }
+]

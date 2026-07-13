@@ -1,0 +1,93 @@
+[
+  {
+    "title": "InterviewCracker – AI Mock Interview Assistant",
+    "imageSrc": "projects/mock_interview.jpg",
+    "description": "AI-powered mock interview platform with generated feedback and answers for improvement.",
+    "demo": "",
+    "skills": [
+      "NEXT.JS",
+      "REACT",
+      "TAILWIND",
+      "CLERK",
+      "DRIZZLE ORM",
+      "GEMINI",
+      "REACT-HOOK",
+      "REACT-WEBCAM",
+      "SHADCN/UI",
+      "HYPERUI"
+    ],
+    "source": ""
+  },
+  
+  {
+    "title": "Certify",
+    "imageSrc": "projects/certify.png",
+    "description": "A Quiz Application that allows users to take quizzes and earn certificates upon successful completion. The application provides a user-friendly interface for quiz participation and certificate generation.",
+    "demo": "",
+    "skills": [
+      "Angular",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Tailwind",
+      "Spring Boot",
+      "Microservices",
+      "PostgreSQL",
+      "Api Gateway",
+      "Cercuit Breaker",
+      "Jwt Authentication",
+      "Docker"
+    ],
+    "source": "https://github.com/Satyam123678/Certify"
+  },
+  
+  {
+    "title": "ClipBoard Manager",
+    "imageSrc": "projects/clipboard.png",
+    "description": "A simple clipboard manager application that allows users to store and retrieve text snippets easily.",
+    "demo": "",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Spring Boot",
+      "PostgreSQL"
+    ],
+    "source": "https://github.com/Satyam123678/clip-board-project"
+  },
+  {
+    "title": "Weather App",
+    "imageSrc": "projects/weather.png",
+    "description": "A simple yet effective weather application that provides current weather information and forecasts for any location. Built with a modern UI and responsive design.",
+    "demo": "https://weather-app-by-satyam.netlify.app/home-page",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Api Calls",
+      "Angular"
+    ],
+    "source": "https://github.com/Satyam123678/Weather-App"
+  },
+  {
+    "title": "Image-Search-Engine",
+    "imageSrc": "projects/project.png",
+    "demo": "https://imagesearchenginbysatyam.netlify.app/image",
+    "description": "An interactive image gallery powered by the Unsplash API. This project showcases a responsive layout, a user-friendly search form, and a dynamic image grid. Users can explore a diverse collection of images and enjoy a seamless browsing experience with the 'Load More' button. Feel free to contribute and explore the world of Unsplash images ! ",
+    "skills": [
+      "Api Calls",
+      "Unsplash API"
+    ],
+    "source": "https://github.com/Satyam123678/Image-Search-App"
+  },
+  {
+    "title": "Learning Management System (LMS)",
+    "imageSrc": "history/mankarCollge.jpg",
+    "description": "Collaborated with a team to develop a comprehensive Learning Management System for Mankar College students. Gained hands-on experience and received certification for the project.",
+    "skills": [
+      "Team Collaboration",
+      "Full-Stack Development"
+    ],
+    "source": ""
+  }
+]
