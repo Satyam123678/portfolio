@@ -119,9 +119,9 @@
     position: absolute;
     right: 0;
     margin-right: 10%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     z-index: 3;
   }
 
@@ -143,8 +143,12 @@
   .menuItems {
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 13px;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    min-width: 220px;
     border-radius: 10px;
     background: rgb(25, 55, 109);
     background: linear-gradient(

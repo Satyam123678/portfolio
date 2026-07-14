@@ -82,7 +82,7 @@ export const Hero = () => {
       </div>
 
       <img
-        src={getImageUrl("hero/heroSatyam.png")}
+        src={getImageUrl("hero/heroSatyam.webp")}
         alt="Hero image of me"
         className={styles.heroImg}
       />
